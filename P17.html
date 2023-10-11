@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marquee</title>
+</head>
+<script>
+    document.getElementById('demo').onmouseover=function(){
+        document.getElementById('demo').stop();
+    }
+    document.getElementById('demo').onmouseleave=function(){
+        document.getElementById('demo').start();
+    }
+</script>
+<body>
+    <center>
+        <h1>Marquee Tag</h1>
+    </center>
+    <hr>
+    <marquee behavior="" direction="">This is a Marquee Tag...</marquee>
+    <br>
+    <marquee behavior="" direction="" id="demo"><img src="image.jpeg" alt=""></marquee>
+    <br>
+<hr>
+<h1>Marquee Tag Behaviour Attribute</h1>
+<marquee behavior="alternate" direction="">This is a Marquee Tag...alternate</marquee>
+<br>
+<marquee behavior="scroll" direction="">This is a Marquee Tag...Scroll</marquee>
+<br>
+<marquee behavior="slide" direction="">This is a Marquee Tag...slide</marquee>
+<br><hr>
+<h1>Marquee Tag Direction Attribute</h1>
+<marquee behavior="alternate" direction="Right">This is a Marquee Tag...alternate</marquee>
+<br>
+<marquee behavior="scroll" direction="up">This is a Marquee Tag...Scroll</marquee>
+<br>
+<marquee behavior="alternate" direction="down" height="50">This is a Marquee Tag...slide</marquee>
+<br>
+<hr>
+
+<h1>Marquee Tag Scrollamount Attribute</h1>
+<marquee behavior="alternate" direction="Right" scrollamount="1">This is a Marquee Tag...alternate</marquee>
+<br>
+<marquee behavior="scroll" direction="up" scrollamount="10">This is a Marquee Tag...Scroll</marquee>
+<br>
+<marquee behavior="alternate" direction="down" height="100" scrollamount="20">This is a Marquee Tag...slide</marquee>
+<br>
+</body>
+</html>
