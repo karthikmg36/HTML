@@ -7,11 +7,41 @@
         <hr>
         <br>
         <h2>TestCase Form..</h2>
-        <form action="">
-            <button type="submit">SUBMIT</button>
+        <form action="" style="border: 2px solid black; background-color: blue; width: max-content; text-align: center; padding: 10px;" >
+            <fieldset>
+                <legend>First Name</legend>
+                <label for="firstName">First Name </label>
+                <input type="text" name="firstName" id="firstName" required placeholder="First Name">
+            
+            </fieldset>
+               
+             <fieldset>
+                <legend>Last Name</legend>
+                <label for="lastName">Last Name </label>
+                <input type="text" name="lastName" id="lastName" required placeholder="Last Name">
+             </fieldset>
+             <fieldset style="margin: 5px;padding: 15px ">
+                <button type="submit">SUBMIT</button>
             <button type="reset">RESET</button>
-            <button type="button">Button</button>
+            <button type="button">BUTTON</button>
+             </fieldset>
+            
         </form>
         <!-- Inside from we have 3 types of button submit,reset,button(no action specified fot this we need to add the functionality using JS.) -->
+    <style>
+        input,legend{
+            border-radius: 10px;
+            text-align: center;
+            margin:5px;
+            color: white;
+        }
+        label{
+            color: red;
+            font-weight: bold;
+        }
+        button{
+            border-radius: 10px;
+        }
+    </style>
     </body>
 </html>
