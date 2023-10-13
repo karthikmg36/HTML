@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <title>Assignment6 HTML Table</title>
+    </head>
+    <body>
+        <div></div>
+        <hr>
+        <table border="2">
+            <tr>
+                <td class="left"><h4>INVOICE TO :</h4></td>
+                <td class="right"><h4>TOTAL DUE</h4></td>
+            </tr>
+            <tr>
+                <td class="left"><h3>DEMOO</h3></td>
+                <td class="right"><h3>$12345</h3></td>
+            </tr>
+            <tr>
+                <td class="left"><p>P : +912-123-2345</p></td>
+                <td class="right"></td>
+            </tr>
+            <tr>
+                <td class="left"><p>E : hello@demo.com</p></td>
+                <td class="right"><p>No: 1234567890</p></td>
+            </tr>
+            <tr>
+                <td class="left"><p>A : 123 demoooo St.Any City, ST 12345</p></td>
+                <td class="right"><p>Date : 12/07/2023</p></td>
+            </tr>
+        </table>
+        <br><br>
+        <table border="1" style="border-collapse: collapse;">
+            <tr>
+                <th>PRODUCTS</th>
+                <th>QTY</th>
+                <th>PRICE</th>
+                <th>TOTAL</th>
+            </tr>
+            <tr>
+              <td class="product">Starybook</td>
+              <td>2</td>
+              <td>$120</td>
+              <td>$240</td>
+            </tr>
+              <tr>
+                <td class="product">Magazine</td>
+                <td>4</td>
+                <td>$100</td>
+                <td>$400</td>
+              </tr>
+              <tr>
+                <td class="product">Notebooks</td>
+                <td>2</td>
+                <td>$120</td>
+                <td>$240</td>
+              </tr>
+              <tr>
+                <td class="product">Comics</td>
+                <td>3</td>
+                <td>$130</td>
+                <td>$390</td>
+              </tr>
+              <tr>
+                <td class="product">Novel</td>
+                <td>2</td>
+                <td>$120</td>
+                <td>$240</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="noborder" rowspan="3"><h4>Payment Method : </h4>Bank Name :Wells Fargo <br>Bank Account : 1234567890</td>
+                <td colspan="" rowspan="" class="rightBorder bottomBorder">Sub-total:</td>  
+                <td class="leftBorder bottomBorder">$1735</td>
+            </tr>
+            <tr>
+                <td class="rightBorder topBorder">Tax :</td>
+                <td class="leftBorder topBorder">$55</td>
+            </tr>
+            <tr>
+                <td class="rightBorder total">Total:</td>
+                <td class="leftBorder total">$1680</td>
+            </tr>
+        </table>
+    </body>
+      
+    <style>
+        table{
+            width: 100%;
+            text-align: center;
+            border: none;
+        }
+        th{
+            background-color: black;
+            color: white;
+            font-weight: bold;
+           
+        }
+        td{
+            border: 2px solid black;
+        }
+        .noborder{
+            border: none;
+            text-align: left;
+        }
+        .rightBorder{
+            border-right: none;
+            text-align: right;
+        }
+        .leftBorder{
+            border-left: 0;
+            text-align: center;
+        }
+        .topBorder{
+            border-top: none;
+        }
+        .bottomBorder{
+            border-bottom: none;
+        }
+        .total{
+            font-weight: bolder
+        }
+        .left{
+            border: none;
+            text-align: left;
+        }
+        .right{
+            border: none;
+            text-align: right;
+        }
+        .product{
+            text-align: left;
+            padding-left:10px ;
+        }
+    </style>
+</html>
