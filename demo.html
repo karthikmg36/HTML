@@ -4,47 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container{
+            background-color: white;
+            width:30%;
+            height: 50px;
+            border: 2px solid green;
+            min-height: 30%;
+            padding: 1%;
+            display: table;
+            background-color: tomato;
+        }
+        .container>div{
+            display: table-cell;
+            
+            width: 29%;
+            margin: 0px;
+            padding: 0%;
+            margin: auto;
+            
+        }
+        .item1{
+            border-top-right-radius: 10px;
+            border: 2px solid white;
+        }
+        .item2{
+            background-color: white;
+            border: none;
+            outline: none;
+        }
+    </style>
 </head>
 <body>
-    <table border="2" border-collapse="collapse">
-        <tr>
-            <td rowspan="3" colspan="4">A</td>
-            <td colspan="2">D</td>
-            <td colspan="2">E</td>
-        </tr>
-        <tr>
-            <td colspan="2">F</td>
-            <td colspan="2">G</td>
-        </tr>
-        <tr>
-            <td colspan="2">H</td>
-            <td colspan="2">I</td>
-        </tr>
-        <tr>
-            <td rowspan="2" colspan="4">B <br> <br></td>
-            <td colspan="2">J</td>
-            <td colspan="2">K</td>
-            
-        </tr>
-        <tr>
-
-            <td rowspan="4" colspan="4">L</td>
-        </tr>
-        <tr>
-            <td rowspan="3" colspan="4">C</td>
-        </tr>
-        <tr></tr>
-        <tr></tr>
-        <tr>
-            <td>A</td>
-            <td>A</td>
-            <td>A</td>
-            <td>A</td>
-            <td>A</td>
-            <td>A</td>
-            <td>A</td>
-            <td>A</td>
-        </tr>
-    </table>
+    <div class="container">
+      <div class="item1"></div>
+      <div class="item2">q3456</div>
+      <div class="item3"></div>
+    </div>
 </body>
 </html>
